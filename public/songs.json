@@ -6,11 +6,12 @@
     "image": "/covers/fall-dances.png"
   },
     {
-    "id": "elegant-horde",
-    "title": "Elegant Horde",
-    "description": "An elegant horde, carving thrones out of discord.",
-    "image": "/covers/elegant_horde.png"
-  },
+  "id": "elegant-horde",
+  "title": "Elegant Horde",
+  "description": "An elegant horde, carving thrones out of discord.",
+  "image": "/covers/elegant-horde.png"
+},
+
   {
     "id": "last-nite",
     "title": "Last Nite",
