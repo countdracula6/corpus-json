@@ -5,11 +5,11 @@
     "description": "Dominoes in a haunted pattern.",
     "image": "/covers/fall-dances.png"
   },
-  {
-    "id": "spoke-in-smoke",
-    "title": "Spoke in Smoke",
-    "description": "Ghost gypsy drifting in fog.",
-    "image": "/covers/spoke-in-smoke.png"
+    {
+    "id": "elegant-horde",
+    "title": "Elegant Horde",
+    "description": "An elegant horde, carving thrones out of discord.",
+    "image": "/covers/elegant_horde.png"
   },
   {
     "id": "last-nite",
@@ -34,11 +34,6 @@
     "title": "Alone",
     "description": "She brushes her hair without witness.",
     "image": "/covers/alone.png"
-  },
-  {
-    "id": "elegant-horde",
-    "title": "Elegant Horde",
-    "description": "An elegant horde, carving thrones out of discord.",
-    "image": "/covers/elegant_horde.png"
   }
+ 
 ]

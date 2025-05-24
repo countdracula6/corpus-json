@@ -241,3 +241,15 @@ input, textarea {
   color: #ff0033;
 }
 
+/* Image hover (add via class or inline) */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Icon hover polish */
+svg:hover {
+  color: #ff0033;
+  transform: scale(1.2);
+}
+
+
