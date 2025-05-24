@@ -20,8 +20,8 @@ function SongCard({ song }) {
 
 const styles = {
   card: {
-    width: '500px',
-    height: '500px',
+    width: '100%',
+    maxWidth: '500px',
     backgroundColor: '#111',
     color: '#fff',
     borderRadius: '8px',
@@ -33,29 +33,29 @@ const styles = {
     justifyContent: 'space-between',
     padding: '1rem',
     fontFamily: "'Aldrich', sans-serif",
+    textAlign: 'center',
   },
   image: {
     width: '100%',
-    height: '60%',
-    objectFit: 'cover',
+    height: 'auto',
     borderRadius: '6px',
+    marginBottom: '1rem',
   },
   title: {
     fontFamily: "'Bodoni Moda', serif",
     fontSize: '1.4rem',
-    margin: '0.5rem 0',
+    marginBottom: '0.3rem',
     color: '#ff0033',
   },
   desc: {
     fontSize: '0.9rem',
-    textAlign: 'center',
-    marginBottom: '1rem',
     color: '#ccc',
+    marginBottom: '1rem',
   },
   icons: {
     display: 'flex',
-    justifyContent: 'space-around',
-    width: '100%',
+    justifyContent: 'center',
+    gap: '1.5rem',
     fontSize: '1.3rem',
   },
   icon: {

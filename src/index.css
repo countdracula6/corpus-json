@@ -197,3 +197,47 @@ input, textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: #666;
 }
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+  width: 100%;
+  background-color: #000;
+  border-top: 1px solid #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Aldrich', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  color: #ff0033;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ccc;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff0033;
+}
+

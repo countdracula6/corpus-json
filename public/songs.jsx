@@ -1,0 +1,44 @@
+[
+  {
+    "id": "fall-dances",
+    "title": "Fall Dances",
+    "description": "Dominoes in a haunted pattern.",
+    "image": "/covers/fall-dances.png"
+  },
+  {
+    "id": "spoke-in-smoke",
+    "title": "Spoke in Smoke",
+    "description": "Ghost gypsy drifting in fog.",
+    "image": "/covers/spoke-in-smoke.png"
+  },
+  {
+    "id": "last-nite",
+    "title": "Last Nite",
+    "description": "A tundra walk under black metal skies.",
+    "image": "/covers/last-nite.png"
+  },
+  {
+    "id": "the-last-spell-vi",
+    "title": "The Last Spell (VI)",
+    "description": "A final love cast in sunlight.",
+    "image": "/covers/last-spell.png"
+  },
+  {
+    "id": "with-satan",
+    "title": "With Satan (I Am)",
+    "description": "Her silence in Baphomet's arms.",
+    "image": "/covers/with-satan.png"
+  },
+  {
+    "id": "alone",
+    "title": "Alone",
+    "description": "She brushes her hair without witness.",
+    "image": "/covers/alone.png"
+  },
+  {
+    "id": "elegant-horde",
+    "title": "Elegant Horde",
+    "description": "An elegant horde, carving thrones out of discord.",
+    "image": "/covers/elegant-horde.png"
+  }
+]
