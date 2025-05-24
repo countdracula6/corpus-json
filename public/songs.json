@@ -3,38 +3,60 @@
     "id": "fall-dances",
     "title": "Fall Dances",
     "description": "Dominoes in a haunted pattern.",
-    "image": "/covers/fall-dances.png"
+    "image": "/covers/fall-dances.png",
+    "preview": "/audio/fall-dances-preview.mp3",
+    "lyrics": "Falling patterns form a path,\nEach step echoes like a scream.\nShe dances through the breaking black,\nDominoes collapse the dream.",
+    "production": "Written & recorded by Corpus.json",
+    "members": ["You - Programming", "Alice - Strings"]
   },
-    {
-  "id": "elegant-horde",
-  "title": "Elegant Horde",
-  "description": "An elegant horde, carving thrones out of discord.",
-  "image": "/covers/elegant-horde.png"
-},
-
+  {
+    "id": "elegant-horde",
+    "title": "Elegant Horde",
+    "description": "An elegant horde, carving thrones out of discord.",
+    "image": "/covers/elegant-horde.png",
+    "preview": "/audio/elegant-horde-preview.mp3",
+    "lyrics": "Their coats dragged through marble dust...\nEyes empty like a stadium post-riot.",
+    "production": "Written and mixed by Corpus.json",
+    "members": ["You - Vocals", "Alice - Arrangement", "Ghost - Programming"]
+  },
   {
     "id": "last-nite",
     "title": "Last Nite",
     "description": "A tundra walk under black metal skies.",
-    "image": "/covers/last-nite.png"
+    "image": "/covers/last-nite.png",
+    "preview": "/audio/last-nite-preview.mp3",
+    "lyrics": "Boots in ice, breath of flame,\nHe walked alone but knew her name.\nCold stars above, rage below,\nLast nite, the frost began to glow.",
+    "production": "Tracked live in one take.",
+    "members": ["You - Guitar", "Viktor - Screams"]
   },
   {
     "id": "the-last-spell-vi",
     "title": "The Last Spell (VI)",
     "description": "A final love cast in sunlight.",
-    "image": "/covers/last-spell.png"
+    "image": "/covers/last-spell.png",
+    "preview": "/audio/last-spell-preview.mp3",
+    "lyrics": "It was never meant to end.\nThe wind spoke your name in hex.\nMy lips carved the last spell — softly,\nBefore silence turned to text.",
+    "production": "Mixed in analog chain.",
+    "members": ["You - Piano", "Alice - Voice"]
   },
   {
     "id": "with-satan",
     "title": "With Satan (I Am)",
     "description": "Her silence in Baphomet's arms.",
-    "image": "/covers/with-satan.png"
+    "image": "/covers/with-satan.png",
+    "preview": "/audio/with-satan-preview.mp3",
+    "lyrics": "She laid in his lap, unafraid,\nA rose curled under burning shade.\nNo words, just pact.\nNo vows, just flame.",
+    "production": "Ritual recorded on reel-to-reel.",
+    "members": ["You - Bass", "Guest - Occult Synth"]
   },
   {
     "id": "alone",
     "title": "Alone",
     "description": "She brushes her hair without witness.",
-    "image": "/covers/alone.png"
+    "image": "/covers/alone.png",
+    "preview": "/audio/alone-preview.mp3",
+    "lyrics": "The mirror forgot her name,\nThe bed asked no questions.\nEven her hair no longer listened —\nOnly the silence stayed.",
+    "production": "Minimal mic, maximum ache.",
+    "members": ["You - Everything"]
   }
- 
 ]
