@@ -73,40 +73,40 @@ const styles = {
     gap: '1rem',
     flexWrap: 'wrap'
   },
-  playButton: {
-    backgroundColor: '#ff0033',
-    border: 'none',
-    color: '#fff',
-    fontSize: '1.2rem',
-    padding: '0.75rem',
-    borderRadius: '50%',
-    cursor: 'pointer',
-    boxShadow: '0 0 10px rgba(255, 0, 51, 0.4)',
-    transition: 'transform 0.2s ease'
-  },
-  barWrap: {
-    flexGrow: 1,
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.75rem',
-    width: '100%'
-  },
-  barContainer: {
-    position: 'relative',
-    flexGrow: 1,
-    height: '12px',
-    backgroundColor: '#111',
-    borderRadius: '6px',
-    overflow: 'hidden',
-    boxShadow: '0 0 6px rgba(255, 0, 51, 0.2) inset'
-  },
-  bar: {
-    height: '100%',
-    backgroundColor: '#ff0033',
-    transition: 'width 0.2s linear',
-    zIndex: 1,
-    position: 'relative'
-  },
+ playButton: {
+  backgroundColor: '#ff0033',
+  border: 'none',
+  color: '#fff',
+  fontSize: '1.2rem',
+  width: '48px',
+  height: '48px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  borderRadius: '50%',
+  cursor: 'pointer',
+  boxShadow: '0 0 10px rgba(255, 0, 51, 0.4)',
+  transition: 'transform 0.2s ease'
+},
+
+barContainer: {
+  position: 'relative',
+  flexGrow: 1,
+  height: '18px',              // ⬅ Thicker
+  backgroundColor: '#111',
+  borderRadius: '9px',
+  overflow: 'hidden',
+  boxShadow: '0 0 6px rgba(255, 0, 51, 0.2) inset'
+},
+
+bar: {
+  height: '100%',
+  backgroundColor: '#ff0033',
+  transition: 'width 0.2s linear',
+  zIndex: 1,
+  position: 'relative'
+},
+
   ecgOverlay: {
     position: 'absolute',
     top: 0,
