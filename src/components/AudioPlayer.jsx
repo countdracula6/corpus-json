@@ -32,13 +32,11 @@ function AudioPlayer({ src }) {
   return (
     <div style={styles.wrapper}>
       <audio ref={audioRef} src={src} preload="metadata" />
-      <div style={styles.playerBox}>
-        <button onClick={togglePlay} style={styles.playButton}>
-          {isPlaying ? <FaPause size={24} /> : <FaPlay size={24} />}
-        </button>
-        <div style={styles.barContainer}>
-          <div style={{ ...styles.bar, width: `${progress}%` }} />
-        </div>
+      <button onClick={togglePlay} style={styles.playButton}>
+        {isPlaying ? <FaPause style={styles.icon} /> : <FaPlay style={styles.icon} />}
+      </button>
+      <div style={styles.progress}>
+        <div style={{ ...styles.progressFill, width: `${progress}%` }} />
       </div>
     </div>
   );
@@ -47,42 +45,45 @@ function AudioPlayer({ src }) {
 const styles = {
   wrapper: {
     width: '100%',
-    maxWidth: '600px',
-    margin: '2rem auto'
-  },
-  playerBox: {
+    maxWidth: '500px',
+    margin: '2rem auto',
+    backgroundColor: '#000',
+    padding: '1rem 1.5rem',
+    borderRadius: '999px',
     display: 'flex',
     alignItems: 'center',
     gap: '1rem',
-    backgroundColor: '#111',
-    padding: '1rem 1.25rem',
-    borderRadius: '12px',
-    boxShadow: '0 0 12px rgba(255, 0, 51, 0.15)'
+    boxShadow: '0 0 12px rgba(255, 0, 51, 0.2)'
   },
   playButton: {
-    backgroundColor: 'transparent',
-    border: '2px solid #ff0033',
-    color: '#ff0033',
-    width: '44px',
-    height: '44px',
+    backgroundColor: '#ff0033',
+    border: 'none',
+    color: '#fff',
+    width: '48px',
+    height: '48px',
+    borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: '8px',
     cursor: 'pointer',
-    transition: 'background-color 0.2s ease',
+    transition: 'transform 0.2s ease-in-out',
   },
-  barContainer: {
+  icon: {
+  fontSize: '1.6rem',
+  color: '#fff'
+},
+
+  progress: {
     flexGrow: 1,
-    height: '12px',
-    backgroundColor: '#333',
-    borderRadius: '6px',
-    overflow: 'hidden'
+    height: '8px',
+    backgroundColor: '#222',
+    borderRadius: '999px',
+    overflow: 'hidden',
   },
-  bar: {
+  progressFill: {
     height: '100%',
-    backgroundColor: '#ff0033',
-    transition: 'width 0.2s linear'
+    background: 'linear-gradient(to right, #ff3366, #ff0033)',
+    transition: 'width 0.2s ease'
   }
 };
 
