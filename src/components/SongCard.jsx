@@ -2,6 +2,16 @@ import { Link } from 'react-router-dom';
 import { FaHeart, FaShareAlt, FaPlay } from 'react-icons/fa';
 
 function SongCard({ song }) {
+  const handleLike = () => {
+    alert(`You liked: ${song.title}`);
+  };
+
+  const handleShare = () => {
+    const url = `${window.location.origin}/song/${song.id}`;
+    navigator.clipboard.writeText(url);
+    alert('Link copied to clipboard!');
+  };
+
   return (
     <div style={styles.card}>
       <div style={styles.imageWrapper}>
@@ -13,8 +23,8 @@ function SongCard({ song }) {
           {song.description.split('\n')[0]}
         </p>
         <div style={styles.icons}>
-          <FaHeart style={styles.icon} title="Like" />
-          <FaShareAlt style={styles.icon} title="Share" />
+          <FaHeart style={styles.icon} title="Like" onClick={handleLike} />
+          <FaShareAlt style={styles.icon} title="Share" onClick={handleShare} />
           <Link to={`/song/${song.id}`}>
             <FaPlay style={{ ...styles.icon, color: '#ff0033' }} title="Listen" />
           </Link>

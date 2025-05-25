@@ -84,6 +84,7 @@ const styles = {
     borderRadius: '6px',
     lineHeight: '1.7',
     width: '100%',
+    fontSize: '1.1rem', // Increased font size
   },
   meta: {
     fontSize: '0.95rem',
