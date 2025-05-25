@@ -78,14 +78,15 @@ const styles = {
     margin: 0,
   },
   lyrics: {
-    whiteSpace: 'pre-wrap',
-    backgroundColor: '#111',
-    padding: '2rem',
-    borderRadius: '6px',
-    lineHeight: '1.7',
-    width: '100%',
-    fontSize: '1.1rem', // Increased font size
-  },
+  whiteSpace: 'pre-wrap',
+  backgroundColor: '#111',
+  padding: '2rem',
+  borderRadius: '6px',
+  lineHeight: '1.7',
+  width: '100%',
+  fontSize: '1rem', // Adjusted size
+},
+
   meta: {
     fontSize: '0.95rem',
     color: '#aaa',
