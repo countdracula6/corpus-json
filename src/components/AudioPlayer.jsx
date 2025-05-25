@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
-import { FaPlay, FaPause } from 'react-icons/fa';
+import { MdPlayArrow, MdPause } from 'react-icons/md';
 
 function AudioPlayer({ src }) {
   const audioRef = useRef(null);
@@ -33,7 +33,7 @@ function AudioPlayer({ src }) {
     <div style={styles.wrapper}>
       <audio ref={audioRef} src={src} preload="metadata" />
       <button onClick={togglePlay} style={styles.playButton}>
-        {isPlaying ? <FaPause style={styles.icon} /> : <FaPlay style={styles.icon} />}
+        {isPlaying ? <MdPause style={styles.icon} /> : <MdPlayArrow style={styles.icon} />}
       </button>
       <div style={styles.progress}>
         <div style={{ ...styles.progressFill, width: `${progress}%` }} />
@@ -58,7 +58,7 @@ const styles = {
   playButton: {
     backgroundColor: '#ff0033',
     border: 'none',
-    color: '#fff',
+    color: '#ffffff',
     width: '48px',
     height: '48px',
     borderRadius: '50%',
@@ -69,10 +69,12 @@ const styles = {
     transition: 'transform 0.2s ease-in-out',
   },
   icon: {
-  fontSize: '1.6rem',
-  color: '#fff'
-},
-
+    fontSize: '2rem',
+    color: '#fff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   progress: {
     flexGrow: 1,
     height: '8px',
