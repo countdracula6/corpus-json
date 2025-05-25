@@ -15,7 +15,7 @@
     "description": "An elegant horde, carving thrones out of discord.",
     "image": "/covers/elegant-horde.png",
     "preview": "/audio/elegant-horde-preview.mp3",
-    "lyrics": "Their coats dragged through marble dust...\nEyes empty like a stadium post-riot.",
+    "lyricsUrl": "/lyrics/elegant-horde.txt",
     "production": "Written and mixed by Corpus.json",
     "members": ["You - Vocals", "Alice - Arrangement", "Ghost - Programming"]
   },
