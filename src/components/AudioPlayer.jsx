@@ -34,7 +34,7 @@ function AudioPlayer({ src }) {
       <audio ref={audioRef} src={src} preload="metadata" />
       <div style={styles.playerBox}>
         <button onClick={togglePlay} style={styles.playButton}>
-          {isPlaying ? <FaPause /> : <FaPlay />}
+          {isPlaying ? <FaPause size={24} /> : <FaPlay size={24} />}
         </button>
         <div style={styles.barContainer}>
           <div style={{ ...styles.bar, width: `${progress}%` }} />
@@ -48,39 +48,36 @@ const styles = {
   wrapper: {
     width: '100%',
     maxWidth: '600px',
-    margin: '2rem auto',
-    padding: '1rem',
-    border: '2px solid #ff0033',
-    borderRadius: '10px',
-    background: '#111',
-    boxShadow: '0 0 20px rgba(255, 0, 51, 0.2)',
+    margin: '2rem auto'
   },
   playerBox: {
     display: 'flex',
     alignItems: 'center',
-    gap: '1rem'
+    gap: '1rem',
+    backgroundColor: '#111',
+    padding: '1rem 1.25rem',
+    borderRadius: '12px',
+    boxShadow: '0 0 12px rgba(255, 0, 51, 0.15)'
   },
   playButton: {
-    backgroundColor: '#ff0033',
-    border: 'none',
-    color: '#fff',
-    fontSize: '1.5rem',
-    width: '50px',
-    height: '50px',
+    backgroundColor: 'transparent',
+    border: '2px solid #ff0033',
+    color: '#ff0033',
+    width: '44px',
+    height: '44px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '8px',
     cursor: 'pointer',
-    boxShadow: '0 0 10px rgba(255, 0, 51, 0.4)',
     transition: 'background-color 0.2s ease',
   },
   barContainer: {
     flexGrow: 1,
-    height: '10px',
+    height: '12px',
     backgroundColor: '#333',
     borderRadius: '6px',
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   bar: {
     height: '100%',
