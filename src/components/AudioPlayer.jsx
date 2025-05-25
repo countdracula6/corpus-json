@@ -127,11 +127,3 @@ const styles = {
 };
 
 export default AudioPlayer;
-
-// CSS Keyframes (insert in global CSS if needed)
-const styleSheet = document.styleSheets[0];
-const keyframes = `@keyframes scrollECG {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}`;
-styleSheet.insertRule(keyframes, styleSheet.cssRules.length);

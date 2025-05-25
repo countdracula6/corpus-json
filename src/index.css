@@ -252,4 +252,10 @@ svg:hover {
   transform: scale(1.2);
 }
 
+@keyframes scrollECG {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
 

@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes scrollECG {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
