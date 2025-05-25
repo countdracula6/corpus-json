@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import AudioPlayer from './AudioPlayer';
+
 
 function SongPage() {
   const { id } = useParams();
@@ -40,10 +42,8 @@ function SongPage() {
           <p><strong>Members:</strong> {song.members.join(', ')}</p>
         </div>
 
-        <audio controls style={styles.audio}>
-          <source src={song.preview} type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
+        <AudioPlayer src={song.preview} />
+
 
         <button style={styles.button}>BUY THE SONG</button>
       </div>
