@@ -9,7 +9,9 @@ function SongCard({ song }) {
       </div>
       <div style={styles.content}>
         <h2 style={styles.title}>{song.title}</h2>
-        <p style={styles.desc}>{song.description}</p>
+        <p style={styles.desc}>
+          {song.description.split('\n')[0]}
+        </p>
         <div style={styles.icons}>
           <FaHeart style={styles.icon} title="Like" />
           <FaShareAlt style={styles.icon} title="Share" />
@@ -62,7 +64,7 @@ const styles = {
     fontSize: '0.95rem',
     color: '#ccc',
     margin: 0,
-    lineHeight: '1.6',
+    lineHeight: '1.5',
     textAlign: 'center',
   },
   icons: {
@@ -77,8 +79,5 @@ const styles = {
     transition: 'color 0.3s ease, transform 0.2s ease',
   },
 };
-
-// Add hover effects using JavaScript-based inline
-// If using CSS Modules or classNames, consider offloading styles
 
 export default SongCard;

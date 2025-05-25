@@ -7,17 +7,19 @@ function SongPage() {
 
   useEffect(() => {
     fetch('/songs.json')
-      .then(res => res.json())
-      .then(data => {
-        const match = data.find(song => song.id === id);
+      .then((res) => res.json())
+      .then((data) => {
+        const match = data.find((song) => song.id === id);
         setSong(match);
       });
   }, [id]);
 
-  if (!song) return <p style={{ color: '#ccc', textAlign: 'center' }}>Loading song details...</p>;
+  if (!song) {
+    return <p style={{ color: '#ccc', textAlign: 'center' }}>Loading song details...</p>;
+  }
 
   return (
-    <div className="container" style={styles.page}>
+    <div style={styles.page}>
       <img src={song.image} alt={song.title} style={styles.image} />
       <h1 style={styles.title}>{song.title}</h1>
 
@@ -40,52 +42,57 @@ function SongPage() {
 
 const styles = {
   page: {
-    padding: '3rem 1.5rem',
-    color: '#ccc',
+    padding: 0,
     fontFamily: "'Aldrich', sans-serif",
-    maxWidth: '800px',
-    margin: '0 auto',
-    textAlign: 'center',
+    color: '#ccc',
   },
   image: {
     width: '100%',
-    maxHeight: '400px',
+    height: 'auto',
+    display: 'block',
     objectFit: 'cover',
-    borderRadius: '8px',
-    marginBottom: '1.5rem',
+    marginBottom: '2rem',
   },
   title: {
     fontFamily: "'Bodoni Moda', serif",
-    fontSize: '2rem',
+    fontSize: '2.5rem',
     color: '#ff0033',
-    marginBottom: '1.5rem',
+    textAlign: 'center',
+    marginBottom: '1rem',
   },
   lyrics: {
     whiteSpace: 'pre-wrap',
     backgroundColor: '#111',
-    padding: '1.5rem',
+    padding: '2rem',
     borderRadius: '6px',
-    margin: '2rem 0',
-    color: '#ddd',
-    lineHeight: '1.6',
+    margin: '0 auto 2rem',
+    maxWidth: '800px',
+    lineHeight: '1.7',
   },
   meta: {
+    maxWidth: '800px',
+    margin: '0 auto 2rem',
+    padding: '0 1rem',
     fontSize: '0.95rem',
     color: '#aaa',
-    marginBottom: '2rem',
+    textAlign: 'center',
   },
   audio: {
-    margin: '1rem 0',
-    width: '100%',
+    display: 'block',
+    margin: '1rem auto',
+    width: '90%',
+    maxWidth: '600px',
   },
   button: {
+    display: 'block',
+    margin: '2rem auto 4rem',
+    padding: '1rem 2rem',
     backgroundColor: '#ff0033',
     color: '#fff',
     fontWeight: 'bold',
-    padding: '0.9rem 2rem',
+    fontSize: '1rem',
     border: 'none',
     borderRadius: '6px',
-    fontSize: '1rem',
     cursor: 'pointer',
   },
 };
