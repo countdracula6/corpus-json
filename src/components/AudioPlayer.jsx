@@ -32,8 +32,12 @@ function AudioPlayer({ src }) {
   return (
     <div style={styles.wrapper}>
       <audio ref={audioRef} src={src} preload="metadata" />
-      <button onClick={togglePlay} style={styles.playButton}>
-        {isPlaying ? <MdPause style={styles.icon} /> : <MdPlayArrow style={styles.icon} />}
+      <button onClick={togglePlay} style={styles.playButton} aria-label={isPlaying ? 'Pause' : 'Play'}>
+        {isPlaying ? (
+          <MdPause style={styles.icon} />
+        ) : (
+          <MdPlayArrow style={styles.icon} />
+        )}
       </button>
       <div style={styles.progress}>
         <div style={{ ...styles.progressFill, width: `${progress}%` }} />
@@ -49,42 +53,39 @@ const styles = {
     margin: '2rem auto',
     backgroundColor: '#000',
     padding: '1rem 1.5rem',
-    borderRadius: '999px',
+    borderRadius: '12px',
     display: 'flex',
     alignItems: 'center',
     gap: '1rem',
-    boxShadow: '0 0 12px rgba(255, 0, 51, 0.2)'
+    boxShadow: '0 0 10px rgba(255, 0, 51, 0.1)'
   },
   playButton: {
     backgroundColor: '#ff0033',
     border: 'none',
-    color: '#ffffff',
-    width: '48px',
-    height: '48px',
+    color: '#fff',
+    width: '50px',
+    height: '50px',
     borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     cursor: 'pointer',
-    transition: 'transform 0.2s ease-in-out',
+    transition: 'background-color 0.3s ease',
   },
   icon: {
-    fontSize: '2rem',
-    color: '#fff',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
+    fontSize: '2.2rem',
+    color: '#fff'
   },
   progress: {
     flexGrow: 1,
-    height: '8px',
-    backgroundColor: '#222',
+    height: '6px',
+    backgroundColor: '#333',
     borderRadius: '999px',
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   progressFill: {
     height: '100%',
-    background: 'linear-gradient(to right, #ff3366, #ff0033)',
+    backgroundColor: '#ff0033',
     transition: 'width 0.2s ease'
   }
 };
