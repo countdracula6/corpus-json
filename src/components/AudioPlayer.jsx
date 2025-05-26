@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from 'react';
-import { MdPlayArrow, MdPause } from 'react-icons/md';
 
 function AudioPlayer({ src }) {
   const audioRef = useRef(null);
@@ -34,9 +33,9 @@ function AudioPlayer({ src }) {
       <audio ref={audioRef} src={src} preload="metadata" />
       <button onClick={togglePlay} style={styles.playButton} aria-label={isPlaying ? 'Pause' : 'Play'}>
         {isPlaying ? (
-          <MdPause style={styles.icon} />
+          <span style={styles.icon}>⏸</span>
         ) : (
-          <MdPlayArrow style={styles.icon} />
+          <span style={styles.icon}>▶</span>
         )}
       </button>
       <div style={styles.progress}>
@@ -71,14 +70,19 @@ const styles = {
     justifyContent: 'center',
     cursor: 'pointer',
     transition: 'background-color 0.3s ease',
+    fontSize: '1.8rem'
   },
   icon: {
-    fontSize: '2.2rem',
-    color: '#fff'
+    color: '#fff',
+    fontSize: '1.6rem',
+    lineHeight: '1',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   progress: {
     flexGrow: 1,
-    height: '6px',
+    height: '14px',
     backgroundColor: '#333',
     borderRadius: '999px',
     overflow: 'hidden'
